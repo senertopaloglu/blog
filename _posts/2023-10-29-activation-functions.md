@@ -1,6 +1,6 @@
 ---
-title: "Data leakage in ML"
-date: 2023-09-23
+title: "Exploring Activation Functions in Machine Learning"
+date: 2023-10-29
 ---
 # Exploring Activation Functions in Machine Learning
 
