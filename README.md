@@ -1,3 +1,5 @@
+https://senertopaloglu.github.io/blog/
+
 <header>
 
 <!--
