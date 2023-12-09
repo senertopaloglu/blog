@@ -21,7 +21,10 @@ The step function, also known as the Heaviside step function, is a simple binary
 The sigmoid function is a smooth, S-shaped curve that maps any input value to a range between 0 and 1. It was widely used in the past but has fallen out of favor in favor of other functions due to the vanishing gradient problem.
 
 ### Hyperbolic Tangent (tanh) Function:
-Similar to the sigmoid function, the hyperbolic tangent function squashes input values to a range between -1 and 1. It overcomes some of the issues associated with the sigmoid function and is still used in some network architectures.
+Similar to the sigmoid function, the hyperbolic tangent function squashes input values to a range between -1 and 1. It overcomes some of the issues associated with the sigmoid function, and holds the following advantages:
+
+- tanh function maps input values to the range [-1, 1], with the center point at 0, unlike the sigmoid function, whose center point is at 0.5. This helps in addressing the vanishing gradient problem, especially in scenarios where the activations tend to drift towards one extreme.
+- It has a steeper gradient than the sigmoid function in the region around 0. This means that the gradients during backpropagation are stronger, facilitating more effective weight updates. Stronger gradients can lead to faster convergence during training.
 
 ### Rectified Linear Unit (ReLU):
 ReLU is one of the most popular activation functions in modern deep learning. It replaces all negative values with zero while leaving positive values unchanged. This function is computationally efficient and has been found to work well in many applications.
