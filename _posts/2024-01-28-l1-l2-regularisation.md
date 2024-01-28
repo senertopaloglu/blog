@@ -10,6 +10,10 @@ this method encourages weights to be 0.0, effectively making neurons that rely o
 ## l2 - aka ridge or weight decay
 same as l1, but adds sum of the **squared** values of the weights to the loss. this penalises weights higher or lower weights (if negative) more severely. this results in less sparse weights.
 
+## Changes to Loss Landscape
+Both the absolute function and square function are convex. Adding the convex regularisation term can result in a more convex loss landscape overall.
+
+## Alpha Parameter of L1/L2 Regularisation
 both methods have a parameter, alpha, that allows us to configure how much attention to pay to penalty. Alpha is a real value between 0 and 1.
 low alpha: model will be allowed to overfit, not much attention paid.
 high alpha: model will underestimate the weights and underfit the problem.
@@ -17,5 +21,7 @@ high alpha: model will underestimate the weights and underfit the problem.
 l1/l2 can work with all network types and are supported by many libraries including (tf?, pytorch?, keras?).
 l1/l2 requires normalised inputs (I have a post on this).
 can use l1+l2 together - explain the effect of this.
+
+
 
 link to how l1/l2 changes loss landscape.
