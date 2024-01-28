@@ -18,10 +18,7 @@ both methods have a parameter, alpha, that allows us to configure how much atten
 low alpha: model will be allowed to overfit, not much attention paid.
 high alpha: model will underestimate the weights and underfit the problem.
 
-l1/l2 can work with all network types and are supported by many libraries including (tf?, pytorch?, keras?).
-l1/l2 requires normalised inputs (I have a post on this).
-can use l1+l2 together - explain the effect of this.
-
-
-
-link to how l1/l2 changes loss landscape.
+## Applying L1/L2 Regularisation
+- L1/L2 can work with all network types and are supported by many libraries including (tf?, pytorch?, keras?).
+- Both approaches requires normalised inputs (I have a post on this).
+- It is possible to use L1 and L2 together.
