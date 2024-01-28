@@ -24,6 +24,8 @@ Considering ML models are relied on for various tasks from stock market predicti
 Many strategies exist to disallow data leakage, including:
 
 - Careful feature engineering: it is important to scrutinise features to ensure they do not contain information that would not be available during deployment. For instance, it is recommended to exclude features like future credit scores if predicting the likelihood of individuals defaulting on loans.
+  
+- Splitting data into training, test and validation sets, before performing scaling/normalisation: if the latter is performed first, scaling parameters (e.g. mean, standard deviation) are influenced by the whole dataset - resulting in the model having prior knowledge about test & validations sets, which it shouldn’t have. This is a subtle form of data leakage.
 
 - Cross-validation: implementing cross-validation techniques (such as k-fold cross-validation) to assess model performance across multiple training and testing splits. This helps identify if the model consistently performs well or if the performance is contingent on specific data splits.
 
