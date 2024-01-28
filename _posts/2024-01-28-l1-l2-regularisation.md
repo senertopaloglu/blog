@@ -2,9 +2,6 @@
 title: "L1 and L2 Regularisation, Explained"
 date: 2024-01-28
 ---
-# L1 and L2 Regularisation, Explained
-
-keeps weights low in neural network. why do this? 
 
 Weight parameters in a neural network can be thought of the importance an input has on the subsequent layers. When overfitting, a lot of trust is placed on a network, in other words, values assigned to weights are high. Thus, keeping them low can prevent overfitting - this is what L1 and L2 regularisation can help us achieve. 
 
